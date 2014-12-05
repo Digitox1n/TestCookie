@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url("../fonts/Lato-Regular.ttf") format('truetype');
+}
+
+@font-face {
+	font-family:'Helvetica Neue';
+	src:url('../fonts/HelveticaNeue-Light.ttf') format('truetype');
+}
+
+header {
+	position: relative;
+	height: 100px;
+	padding: 10px;
+}
+
+/* --- Barre de navigation --- */
+
+.navbar {
+	position: absolute;
+	top: 70px;
+	right: 50px;
+  	font-family:'Lato';
+  	font-size: 0.85em;
+  	text-transform: uppercase;
+}
+
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", sans-serif;
+	background: url("../img/BG.png");
+	background-attachment: fixed;
+	background-size: contain;
+}
+
+.navbar a:not(.active) {
+	opacity: 0.65;
+}
+
+.navbar a:hover {
+	opacity: 1;
+}
+
+.logo {
+}
+
+.navbar a {
+	padding: 10px;
+	text-decoration: none;
+  	color: #fff;
+}
+
+/* --- Contenu --- */
+
+.wrapper {
+	width: 70%;
+	margin: 50px auto;
+	background: rgba(255,255,255,0.2);
+	color: #ffffff;
+	padding: 20px;
+	border-top: solid 7px #009ed5;
+}
+
+input[type="text"] {
+	background: none;
+	border: solid 1px;
+	color: white;
+	border-radius:10px;
+	padding:5px;
+	outline: none;
+}
+
+button {
+	margin-top: 10px;
+	border: 2px solid #009ed5;
+	border-radius: 5px;
+	background: none;
+	cursor: pointer;
+	outline: none;
+}
+
+button:hover,
+button:focus {
+  outline   : none;
+  background: #009ed5;
+  color   : #fff;
+}
+
+textarea {
+	margin-top: 10px;
+	outline: none;
+	border: solid 1px white;
+	background: none;
+	color: white;
+	padding: 5px;
+	width: 240px;
+	height: 100px;
+}
+
+.exp-pro {
+	color: black;
+}
+
+.description-exp-pro {
+	color: #848484;
+	font-size: 0.9em;
+}
+
+.formulaire-contact {
+	text-align: center;
+}
+
+.youtube {
+	margin:auto;
+	display:block;
+	border:none;
+}
+
+.wrapper:not(.formulaire-contact) {
+	text-align: justify;
+}
+
+.wrapper a:not(.description-exp-pro) {
+	color: white;
+}
+
+#ancre-page {
+	color: black;
+	font-weight: 300;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background: white;
+	width: 60%;
+}
+
+/* --- Footer --- */
+
+footer {
+	font-weight: 300;
+	font-size: 0.9em;
+	min-height: 10px;
+	color: black;
+	margin-left: 10px;
+	cursor: default;
+}
